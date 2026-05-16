@@ -95,7 +95,7 @@
       <None Update="Prompts\Mem0\CodeSystem.md">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="KoalaWiki.db">
+      <None Update="db_backup\backup\KoalaWiki.db">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>

@@ -45,7 +45,7 @@ public partial class WarehouseProcessingTask(IServiceProvider service, ILogger<W
                 }
 
                 var documents = await dbContext.Documents
-                    .Where(x => warehouse.Id == x.WarehouseId && x.LastUpdate < DateTime.Now.AddDays(-updateInterval))
+                    .Where(x => warehouse.Id == x.WarehouseId && x.LastUpdate < DateTime.Now.AddDays(-0.5))
                     .ToListAsync(stoppingToken);
 
                 var warehouseIds = documents.Select(x => x.WarehouseId).ToArray();
